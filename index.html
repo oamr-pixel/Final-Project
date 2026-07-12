@@ -1,0 +1,296 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Ola Amr - Creative Technologist Portfolio</title>
+    <meta name="description" content="A portfolio for creative computing, computer vision, interactive tools, and polished technical projects.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="portfolio.css">
+  </head>
+  <body>
+    <div id="clouds" aria-hidden="true"></div>
+    <div id="stars" aria-hidden="true"></div>
+    <div class="noise" aria-hidden="true"></div>
+
+    <header class="site-header">
+      <a class="brand" href="#top" aria-label="Ola Amr home">
+        <span class="brand-mark">OA</span>
+        <span>Ola Amr</span>
+      </a>
+      <nav class="tabs" aria-label="Primary navigation">
+        <a href="#work" class="tab active">Work</a>
+        <a href="#projects" class="tab">Projects</a>
+        <a href="#about" class="tab">About</a>
+        <a href="#skills" class="tab">Skills</a>
+        <a href="#contact" class="tab">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero section visible" id="work">
+        <div class="hero-copy">
+          <p class="eyebrow">Creative computing portfolio</p>
+          <h1>Building polished things where code gets visual.</h1>
+          <p class="hero-text">
+            I make technical projects feel alive: computer vision experiments, interactive tools, visual systems, and front-end experiences that are easy to understand and hard to ignore.
+          </p>
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">Explore Projects</a>
+            <a class="button ghost" href="https://github.com/oamr-pixel/Final-Project">View GitHub</a>
+          </div>
+          <dl class="stats" aria-label="Portfolio highlights">
+            <div>
+              <dt>7</dt>
+              <dd>painted videos</dd>
+            </div>
+            <div>
+              <dt>5</dt>
+              <dd>new build ideas</dd>
+            </div>
+            <div>
+              <dt>100%</dt>
+              <dd>project-first</dd>
+            </div>
+          </dl>
+        </div>
+
+        <div class="hero-stage" aria-label="Featured project preview">
+          <div class="profile-card">
+            <div class="avatar-frame">
+              <img src="pc.png" alt="Ola Amr avatar" id="avatarImage">
+              <span class="avatar-fallback">OA</span>
+            </div>
+            <div>
+              <p>Ola Amr</p>
+              <span>CS / EE / Design-minded builder</span>
+            </div>
+          </div>
+          <div class="feature-reel">
+            <video src="Outputs/painted_video1.mp4" autoplay muted loop playsinline></video>
+            <div class="reel-caption">
+              <span>Featured</span>
+              <strong>Temporal Video Painting</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section feature-section" id="featured">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Featured case study</p>
+            <h2>Painterly video stylization</h2>
+          </div>
+          <a class="text-link" href="EE%20166%20Final%20Project%20Report.pdf">Read report</a>
+        </div>
+        <div class="case-study">
+          <div class="case-copy">
+            <h3>Turning motion into hand-painted texture</h3>
+            <p>
+              This project transforms video frames into animated paintings using layered curved strokes, gradient-following paths, and temporal coherence so the image keeps its painterly structure across time.
+            </p>
+            <div class="case-actions">
+              <a class="button primary" href="https://github.com/oamr-pixel/Final-Project">Source Code</a>
+              <a class="button ghost" href="#process">Method</a>
+            </div>
+          </div>
+          <div class="video-wall">
+            <video src="Outputs/painted_video2.mp4" autoplay muted loop playsinline></video>
+            <video src="Outputs/painted_video4.mp4" autoplay muted loop playsinline></video>
+            <video src="Outputs/painted_video7.mp4" autoplay muted loop playsinline></video>
+          </div>
+        </div>
+      </section>
+
+      <section class="section project-section" id="projects">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Build next</p>
+            <h2>Projects worth showing off</h2>
+          </div>
+          <span class="section-note">Designed as future GitHub-ready portfolio pieces</span>
+        </div>
+        <div class="project-grid">
+          <article class="project-card project-live">
+            <video src="Outputs/painted_video5.mp4" autoplay muted loop playsinline></video>
+            <div class="project-body">
+              <span class="project-kicker">Computer vision</span>
+              <h3>Temporal Paint Studio</h3>
+              <p>An interactive web app where users upload short clips, tune brush size, stroke length, repaint threshold, and export stylized results.</p>
+              <div class="project-meta">
+                <span>OpenCV</span>
+                <span>Python</span>
+                <span>UI</span>
+              </div>
+              <a class="project-link" href="https://github.com/oamr-pixel/Final-Project">View existing repo</a>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-art weather-art" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <div class="project-body">
+              <span class="project-kicker">Data + design</span>
+              <h3>Campus Energy Lens</h3>
+              <p>A dashboard that turns building energy, weather, and occupancy data into clean visual recommendations for lowering waste.</p>
+              <div class="project-meta">
+                <span>React</span>
+                <span>D3</span>
+                <span>Analytics</span>
+              </div>
+              <span class="project-link muted">Repo soon</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-art ai-art" aria-hidden="true">
+              <i></i><i></i><i></i><i></i>
+            </div>
+            <div class="project-body">
+              <span class="project-kicker">AI tool</span>
+              <h3>Study Session Copilot</h3>
+              <p>A note-to-quiz assistant that turns class notes into flashcards, mini exams, and a study plan with progress tracking.</p>
+              <div class="project-meta">
+                <span>LLM API</span>
+                <span>TypeScript</span>
+                <span>UX</span>
+              </div>
+              <span class="project-link muted">Repo soon</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-art signal-art" aria-hidden="true">
+              <b></b><b></b><b></b><b></b><b></b>
+            </div>
+            <div class="project-body">
+              <span class="project-kicker">Signals</span>
+              <h3>Audio Fingerprint Lab</h3>
+              <p>A browser lab that visualizes waveforms, spectrograms, and simple fingerprint matching from short audio clips.</p>
+              <div class="project-meta">
+                <span>DSP</span>
+                <span>Canvas</span>
+                <span>Web Audio</span>
+              </div>
+              <span class="project-link muted">Repo soon</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-art map-art" aria-hidden="true">
+              <span></span><span></span><span></span><span></span>
+            </div>
+            <div class="project-body">
+              <span class="project-kicker">Full stack</span>
+              <h3>Volunteer Matchboard</h3>
+              <p>A polished platform that matches students with local volunteer opportunities by skills, distance, schedule, and impact area.</p>
+              <div class="project-meta">
+                <span>Next.js</span>
+                <span>Postgres</span>
+                <span>Maps</span>
+              </div>
+              <span class="project-link muted">Repo soon</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <div class="project-art vision-art" aria-hidden="true">
+              <em></em><em></em><em></em>
+            </div>
+            <div class="project-body">
+              <span class="project-kicker">Creative coding</span>
+              <h3>Generative Poster Machine</h3>
+              <p>A design tool that creates exportable event posters from color palettes, typography rules, image masks, and layout constraints.</p>
+              <div class="project-meta">
+                <span>Canvas</span>
+                <span>Design systems</span>
+                <span>Export</span>
+              </div>
+              <span class="project-link muted">Repo soon</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section process-section" id="process">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">How I think</p>
+            <h2>Readable process, visible results</h2>
+          </div>
+        </div>
+        <div class="process-list">
+          <div class="process-step">
+            <span>01</span>
+            <h3>Prototype the core</h3>
+            <p>Start with the real algorithm or workflow, then make the simplest version that proves the idea.</p>
+          </div>
+          <div class="process-step">
+            <span>02</span>
+            <h3>Make it legible</h3>
+            <p>Turn raw outputs into an interface, demo, chart, or story that makes the technical work easy to follow.</p>
+          </div>
+          <div class="process-step">
+            <span>03</span>
+            <h3>Polish the share</h3>
+            <p>Package the project with a clean README, screenshots, live demo, and focused explanation.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section about-section" id="about">
+        <div class="about-copy">
+          <p class="eyebrow">About</p>
+          <h2>I like projects that can be understood at a glance, then reward a closer look.</h2>
+        </div>
+        <div class="about-panel">
+          <p>
+            My strongest portfolio lane is the overlap of engineering, visual systems, and human-friendly explanation. A good site for you should show that you can build the thing, shape the experience, and explain why the implementation matters.
+          </p>
+          <p>
+            Add a real photo if you have one you like. If not, an avatar works. The key is confidence: one intentional image beats five awkward ones.
+          </p>
+        </div>
+      </section>
+
+      <section class="section skills-section" id="skills">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Toolbox</p>
+            <h2>Skills highlighted</h2>
+          </div>
+        </div>
+        <div class="skill-tags" aria-label="Skills">
+          <span class="skill-tag">Python</span>
+          <span class="skill-tag">OpenCV</span>
+          <span class="skill-tag">NumPy</span>
+          <span class="skill-tag">Computer Vision</span>
+          <span class="skill-tag">Creative Coding</span>
+          <span class="skill-tag">JavaScript</span>
+          <span class="skill-tag">HTML/CSS</span>
+          <span class="skill-tag">Data Visualization</span>
+          <span class="skill-tag">UX Polish</span>
+          <span class="skill-tag">GitHub</span>
+        </div>
+      </section>
+
+      <section class="section contact-section" id="contact">
+        <div>
+          <p class="eyebrow">Next step</p>
+          <h2>Turn this into a live portfolio and start filling the repos.</h2>
+          <p>When you are ready, this can be pushed to GitHub and deployed on Netlify or GitHub Pages.</p>
+        </div>
+        <div class="contact-actions">
+          <a class="button primary" href="https://github.com/oamr-pixel/Final-Project">GitHub Repo</a>
+          <a class="button ghost" href="#top">Back to top</a>
+        </div>
+      </section>
+    </main>
+
+    <script src="portfolio.js"></script>
+  </body>
+</html>
